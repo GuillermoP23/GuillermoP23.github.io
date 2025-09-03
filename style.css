@@ -1,4 +1,4 @@
-/* Fuente moderna de Google Fonts */
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
@@ -66,7 +66,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ---------- Sección: Sobre mí y Contacto ---------- */
+/* ---------- Sobre mí / Contacto ---------- */
 
 .about p,
 .contact p {
@@ -76,7 +76,7 @@ a:hover {
   text-align: center;
 }
 
-/* ---------- Sección: Conocimientos y Tecnologías ---------- */
+/* ---------- Conocimientos y Tecnologías ---------- */
 
 .skills {
   text-align: center;
@@ -90,17 +90,21 @@ a:hover {
   text-align: center;
 }
 
+/* ✅ CORREGIDO: grid centrado y responsivo */
 .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 40px;
-  margin-top: 20px;
+  justify-items: center;
+  align-items: start;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .skill-item {
-  width: 200px;
   text-align: center;
+  width: 100%;
+  max-width: 180px;
 }
 
 .skill-icon {
@@ -129,7 +133,7 @@ a:hover {
   margin: 0;
 }
 
-/* ---------- Sección: Certificaciones ---------- */
+/* ---------- Certificaciones ---------- */
 
 .certifications {
   text-align: center;
@@ -174,7 +178,7 @@ a:hover {
   display: inline-block;
 }
 
-/* ---------- Sección: Portafolio ---------- */
+/* ---------- Portafolio ---------- */
 
 .portfolio {
   text-align: center;
