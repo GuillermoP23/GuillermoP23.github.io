@@ -2,83 +2,37 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Guillermo P - Página Personal</title>
+  <title>Guillermo Pezo - Especialista en Redes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #f4f4f4;
-      color: #222;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-    h1 {
-      color: #0057b7;
-    }
-    section {
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #ccc;
-      max-width: 700px;
-      margin: auto;
-      margin-bottom: 30px;
-    }
-    .cert-panels {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    .cert-panel {
-      background: #e7f0fa;
-      border-left: 6px solid #0057b7;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px #ccc;
-      padding: 20px 25px;
-      min-width: 240px;
-      max-width: 320px;
-      flex: 1 1 240px;
-    }
-    .cert-panel h3 {
-      margin-top: 0;
-      color: #0057b7;
-    }
-    .cert-panel a {
-      display: inline-block;
-      margin-top: 12px;
-      color: #0057b7;
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      color: #888;
-    }
-  </style>
-
+  <!-- Fuente moderna de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS externo -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>¡Hola Soy Guillermo Pezo!</h1>
-    <p>Especialista en redes y seguridad</p>
+    <div class="container">
+      <h1>Guillermo Pezo</h1>
+      <p>Especialista en Redes y Seguridad Informática</p>
+    </div>
   </header>
-  <section>
+
+  <section class="about container">
     <h2>Sobre mí</h2>
     <p>
-      ¡Hola! Soy Guillermo. Esta es mi página web personal donde comparto mis proyectos.
-    </p>
-    <h2>Contacto</h2>
-    <p>
-      Puedes contactarme a través de <a href="mailto:guillermo.pezo24@gmail.com">guillermo.pezo24@gmail.com</a>
+      ¡Hola! Soy Guillermo, profesional en redes y seguridad informática. Esta es mi página personal donde comparto mis certificaciones, proyectos y formas de contacto.
     </p>
   </section>
-  <section>
+
+  <section class="contact container">
+    <h2>Contacto</h2>
+    <p>
+      ¿Tienes una propuesta o quieres contactarme? Escríbeme a:<br>
+      <a href="mailto:guillermo.pezo24@gmail.com">guillermo.pezo24@gmail.com</a>
+    </p>
+  </section>
+
+  <section class="certifications container">
     <h2>Certificaciones</h2>
     <div class="cert-panels">
       <div class="cert-panel">
@@ -91,11 +45,13 @@
         <p>Obtenida en 2023 - CompTIA</p>
         <a href="#" target="_blank">Ver Certificado</a>
       </div>
-      <!-- Puedes agregar más paneles aquí -->
+      <!-- Puedes agregar más certificaciones aquí -->
     </div>
   </section>
+
   <footer>
-    &copy; 2025 Guillermo Pezo
+    <p>&copy; 2025 Guillermo Pezo — Todos los derechos reservados</p>
   </footer>
 </body>
 </html>
+
