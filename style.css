@@ -1,6 +1,4 @@
-/* style.css */
-
-/* Fuente moderna */
+/* Fuente moderna de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
@@ -56,6 +54,7 @@ h2 {
   font-size: 2rem;
   color: var(--main-color);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 a {
@@ -67,7 +66,17 @@ a:hover {
   text-decoration: underline;
 }
 
-/* --- Sección Conocimientos y Tecnologías --- */
+/* ---------- Sección: Sobre mí y Contacto ---------- */
+
+.about p,
+.contact p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* ---------- Sección: Conocimientos y Tecnologías ---------- */
 
 .skills {
   text-align: center;
@@ -78,17 +87,20 @@ a:hover {
   font-style: italic;
   color: #666;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
-  justify-items: center;
+  margin-top: 20px;
 }
 
 .skill-item {
-  max-width: 220px;
+  width: 200px;
+  text-align: center;
 }
 
 .skill-icon {
@@ -117,11 +129,17 @@ a:hover {
   margin: 0;
 }
 
-/* --- Certificaciones --- */
+/* ---------- Sección: Certificaciones ---------- */
+
+.certifications {
+  text-align: center;
+}
+
 .cert-panels {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -132,6 +150,7 @@ a:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   padding: 20px;
   flex: 1 1 300px;
+  max-width: 400px;
   transition: transform 0.2s;
 }
 
@@ -155,8 +174,13 @@ a:hover {
   display: inline-block;
 }
 
-/* --- Portafolio --- */
-.portfolio .project-list {
+/* ---------- Sección: Portafolio ---------- */
+
+.portfolio {
+  text-align: center;
+}
+
+.project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
@@ -198,7 +222,8 @@ a:hover {
   text-decoration: underline;
 }
 
-/* --- Footer --- */
+/* ---------- Footer ---------- */
+
 footer {
   background: var(--footer-bg);
   padding: 20px;
