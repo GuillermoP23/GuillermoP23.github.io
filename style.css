@@ -90,21 +90,19 @@ a:hover {
   text-align: center;
 }
 
-/* ✅ CORREGIDO: grid centrado y responsivo */
+/* ✅ Flexbox centrado */
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
-  justify-items: center;
-  align-items: start;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .skill-item {
+  width: 180px;
   text-align: center;
-  width: 100%;
-  max-width: 180px;
 }
 
 .skill-icon {
